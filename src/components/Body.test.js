@@ -1,11 +1,18 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
+import { ContainerProvider } from './ContainerContext';
+
 import Body from './Body';
 
-const defaultProps = {};
+const defaultValue = {};
 
-const mountComponent = props => mount(<Body {...defaultProps} {...props} />);
+const mountComponent = value =>
+  mount(
+    <ContainerProvider value={{ ...defaultValue, ...value }}>
+      <Body />
+    </ContainerProvider>
+  );
 
 describe('<Body />', () => {
   it('renders without error', () => {
