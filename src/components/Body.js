@@ -1,27 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 
 import Info from './Info';
 import Box from './Box';
 
-import { ContainerConsumer } from './ContainerContext';
+import { ContainerContext } from './ContainerContext';
 const SpanName = styled.span`
   color: #f77f00;
 `;
 
 const Body = () => {
+  const value = useContext(ContainerContext);
   return (
-    <ContainerConsumer>
-      {value => (
-        <Box color="#cd84f1" content="Body.js">
-          <h2>
-            It's good to see you at <SpanName>{value.companyName}</SpanName>
-          </h2>
-          <p>Some extra information bellow:</p>
-          <Info />
-        </Box>
-      )}
-    </ContainerConsumer>
+    <Box color="#cd84f1" content="Body.js">
+      <h2>
+        It's good to see you at <SpanName>{value.companyName}</SpanName>
+      </h2>
+      <p>Some extra information bellow:</p>
+      <Info />
+    </Box>
   );
 };
 

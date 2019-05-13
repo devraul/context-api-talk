@@ -1,19 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Box from './Box';
-import { ContainerConsumer } from './ContainerContext';
+import { ContainerContext } from './ContainerContext';
 
 const CompanyTitle = () => {
+  const value = useContext(ContainerContext);
+
   return (
-    <ContainerConsumer>
-      {value => {
-        return (
-          <Box as="h1" color="#fffa65" content="CompanyTitle.js">
-            Welcome to {value.companyName}
-          </Box>
-        );
-      }}
-    </ContainerConsumer>
+    <Box as="h1" color="#fffa65" content="CompanyTitle.js">
+      Welcome to {value.companyName}
+    </Box>
   );
 };
 
