@@ -1,25 +1,9 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
-import { fetchCompany } from '../service';
+import Box from './Box';
 import Page from './Page';
 
-const StateStyled = styled.p``;
-
-const ContainerStyled = styled.div`
-  border: 1px dashed #7efff5;
-  position: relative;
-  padding: 2rem;
-  &:before {
-    content: 'CompanyTitle.js';
-    color: #7efff5;
-    font-weight: normal;
-    position: absolute;
-    font-size: 12px;
-    top: 6px;
-    left: 6px;
-  }
-`;
+import { fetchCompany } from '../service';
 
 export default class Container extends Component {
   state = {
@@ -44,13 +28,11 @@ export default class Container extends Component {
 
   render() {
     return (
-      <ContainerStyled>
-        <StateStyled>
-          this.state.companyName = "{this.state.companyName}"
-        </StateStyled>
+      <Box color="#7efff5" padding="2rem" content="Container.js">
+        <p>this.state.companyName = "{this.state.companyName}"</p>
         <Page companyName={this.state.companyName} />
         <button onClick={this.reloadCompanyName}>Reload</button>
-      </ContainerStyled>
+      </Box>
     );
   }
 }
