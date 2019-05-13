@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Info from './Info';
 import Box from './Box';
 
+import { ContainerConsumer } from './ContainerContext';
 const SpanName = styled.span`
   color: #f77f00;
 `;
@@ -20,15 +21,17 @@ export default class Body extends Component {
   };
   render() {
     return (
-      <Box color="#cd84f1" content="Body.js">
-        {this.state.message && <h2>{this.state.message}</h2>}
-        <h3>
-          It's good to see you at <SpanName>{this.props.companyName}</SpanName>
-        </h3>
-
-        <p>Some extra information bellow:</p>
-        <Info />
-      </Box>
+      <ContainerConsumer>
+        {value => (
+          <Box color="#cd84f1" content="Body.js">
+            <h2>
+              It's good to see you at <SpanName>{value.companyName}</SpanName>
+            </h2>
+            <p>Some extra information bellow:</p>
+            <Info />
+          </Box>
+        )}
+      </ContainerConsumer>
     );
   }
 }

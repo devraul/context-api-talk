@@ -4,11 +4,11 @@ import Header from './Header';
 import Body from './Body';
 import Box from './Box';
 
-const Page = ({ companyName }) => {
+const Page = () => {
   return (
     <Box padding="2rem" content="Page.js" color="#ff6b6b">
-      <Header companyName={companyName} />
-      <Body companyName={companyName} />
+      <Header />
+      <Body />
     </Box>
   );
 };
