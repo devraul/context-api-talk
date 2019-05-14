@@ -14,10 +14,20 @@ const AppStyled = styled.div`
   justify-content: center;
 `;
 
+const LinkStyled = styled.a`
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+`;
+
 function App() {
   return (
     <AppStyled>
       <Container />
+      <LinkStyled href="https://devraul.github.io/context-api-talk/slides-context-api.html">
+        Slides link
+      </LinkStyled>
     </AppStyled>
   );
 }
