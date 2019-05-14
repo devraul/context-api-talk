@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.25d2b8ff.chunk.js",
-    "main.js.map": "/static/js/main.25d2b8ff.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.d820852f.chunk.js": "/static/js/2.d820852f.chunk.js",
-    "static/js/2.d820852f.chunk.js.map": "/static/js/2.d820852f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f60716f63d305c6b5532dbf61d797f6b.js": "/precache-manifest.f60716f63d305c6b5532dbf61d797f6b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map"
+    "main.css": "/context-api-talk/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/context-api-talk/static/js/main.2a50a051.chunk.js",
+    "main.js.map": "/context-api-talk/static/js/main.2a50a051.chunk.js.map",
+    "runtime~main.js": "/context-api-talk/static/js/runtime~main.da8f3b02.js",
+    "runtime~main.js.map": "/context-api-talk/static/js/runtime~main.da8f3b02.js.map",
+    "static/js/2.0a025f89.chunk.js": "/context-api-talk/static/js/2.0a025f89.chunk.js",
+    "static/js/2.0a025f89.chunk.js.map": "/context-api-talk/static/js/2.0a025f89.chunk.js.map",
+    "index.html": "/context-api-talk/index.html",
+    "precache-manifest.e8675368131f788d328b341d66530a96.js": "/context-api-talk/precache-manifest.e8675368131f788d328b341d66530a96.js",
+    "service-worker.js": "/context-api-talk/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/context-api-talk/static/css/main.5ecd60fb.chunk.css.map"
   }
 }
