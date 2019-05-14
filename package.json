@@ -6,13 +6,15 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
+    "rimraf": "^2.6.3",
     "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "rimraf build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "postbuild": "node scripts/copy-slides.js",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
